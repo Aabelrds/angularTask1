@@ -13,12 +13,15 @@
   font-weight: bold;
 
 }
-
+li{
+  list-style: none;
+}
 .container-button{
   margin: 5px;
   padding: 4px 4px;
   width: auto;
   background-color: #343434;
   color: white;
+  border-radius: 5px;
 
 }

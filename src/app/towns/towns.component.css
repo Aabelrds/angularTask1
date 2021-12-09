@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+
+
+
+}
+.container__ul{
+  margin: 8px;
+  border: 2px solid darkslategrey;
+  border-radius: 5px;
+  width: 180px;
+
+
+}
+
+
+.container__button{
+
+  margin: 6px;
+  padding: 4px 4px;
+  width: 100px;
+  background-color: #343434;
+  color: white;
+  border-radius: 5px;
+  border-radius: 5px;
+
+}

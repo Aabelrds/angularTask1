@@ -5,7 +5,10 @@
 
 }
 .container-ul{
-  margin: 10px;
+  margin: 8px;
+  border: 2px solid darkslategrey;
+  border-radius: 5px;
+  width: 180px;
 }
 
 
@@ -15,5 +18,6 @@
   width: 100px;
   background-color: #343434;
   color: white;
+  border-radius: 5px;
 
 }

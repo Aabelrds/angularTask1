@@ -1,14 +1,16 @@
 <h1>Cities</h1>
 <div class="container">
-  <ul *ngIf="show" class="container-ul">
+  <ul *ngIf="show" class="container__ul">
     <li *ngFor="let city of cities" class="container-li">{{city}}</li>
   </ul>
-<div *ngIf="deletedCities.length" class="delete-container">
-  <h1>Deleted Cities</h1>
-  <ul class="delete-container-ul">
-    <li *ngFor="let city of deletedCities" class="container-li">{{city}}</li>
-  </ul>
-</div>
-  <button (click)="showCities()" class="delete-container-button">Show Cities</button>
-  <button (click)="deleteCity()" class="delete-container-button">Delete City</button>
+  <div *ngIf="deletedCities.length" class="container">
+    <h1>Deleted Cities</h1>
+    <ul class="container__ul">
+      <li *ngFor="let city of deletedCities" class="container__li">{{city}}</li>
+    </ul>
+  </div>
+  <div class="container-button">
+    <button (click)="showCities()" class="container__button">Show Cities</button>
+    <button (click)="deleteCity()" class="container__button">Delete City</button>
+  </div>
 </div>
