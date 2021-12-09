@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.container-ul{
+  margin: 10px;
+}
+
+
+.container-button{
+  margin-left: 30px;
+  padding: 4px 4px;
+  width: 100px;
+  background-color: #343434;
+  color: white;
+
+}

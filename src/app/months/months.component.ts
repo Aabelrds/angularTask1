@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './months.component.html',
   styleUrls: ['./months.component.css']
 })
-export class MonthsComponent implements OnInit {
+export class MonthsComponent {
+  months:string[] = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  mes:number = 0;
+  hijo:number = this.month();
 
-  constructor() { }
+  month():number{
+    console.log(this.mes,"mes");
+    return this.mes +=1;
 
-  ngOnInit(): void {
+  }
+
+  deleteMonth():void{
+    this.months.shift();
   }
 
 }

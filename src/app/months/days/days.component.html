@@ -1,0 +1,9 @@
+<div class="container">
+  <ul class="container-ul">
+    <li >
+        <span class="container-days" *ngFor="let day of days">{{day}}</span>
+    </li>
+
+  </ul>
+  <button (click)="deleteMonth()" class="container-button">Delete a day</button>
+</div>

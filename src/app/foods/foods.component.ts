@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './foods.component.html',
   styleUrls: ['./foods.component.css']
 })
-export class FoodsComponent implements OnInit {
+export class FoodsComponent {
 
-  constructor() { }
+  foods:string[] = ['Hamburger','Pizza', 'Pasta', 'Bacalhao','Espetada', 'Caldo Verde', 'Arepas','Paella'];
 
-  ngOnInit(): void {
+  deleteAllList():void{
+    this.foods = [];
   }
 
 }

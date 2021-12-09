@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './flowers.component.html',
   styleUrls: ['./flowers.component.css']
 })
-export class FlowersComponent implements OnInit {
+export class FlowersComponent{
 
-  constructor() { }
+  flowers:string[]= ['Tulipanes','Margaritas','Rosas','claveles','Girasol','Orquidea','Azucena','Lavanda' ];
 
-  ngOnInit(): void {
+  deleteAllList(): void{
+    this.flowers = [];
   }
-
 }

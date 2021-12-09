@@ -1,1 +1,7 @@
-<p>flowers works!</p>
+<h1>Flowers</h1>
+<div class="container">
+  <ul class="container-ul">
+    <li *ngFor="let flower of flowers" class="container-li">{{flower}}</li>
+  </ul>
+  <button (click)="deleteAllList()" class="container-button">Delete List</button>
+</div>

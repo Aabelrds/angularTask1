@@ -1,1 +1,11 @@
-<p>months works!</p>
+<div class="container">
+  <h1>Months</h1>
+  <ul>
+    <li *ngFor="let month of months; let i = index" >
+      <p>{{month}}</p>
+
+      <app-days></app-days>
+    </li>
+    <button (click)="deleteMonth()">Delete a month</button>
+  </ul>
+</div>

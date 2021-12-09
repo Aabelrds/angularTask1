@@ -1,1 +1,7 @@
-<p>foods works!</p>
+<h1>Foods</h1>
+<div class="container">
+  <ul class="container-ul">
+    <li *ngFor="let food of foods" class="container-li">{{food}}</li>
+  </ul>
+  <button (click)="deleteAllList()" class="container-button">Delete List</button>
+</div>
